@@ -3,45 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=h1, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Meteo App</title>
   </head>
   <body>
     <div class="Weather-app">
-    <header>
-        <form>
-            <input type="search" placeholder="Enter a city.." required/>
-            <input type="submit" value="Search" />
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
-    </header>
-    <main>
-        <div>
-    <h1>Paris</h1>
-    <p>
-        Tuesday 14:49, scattered clouds
-        <br />
-        Humidity: 66%, Wind: 3.12km/h
-    </p>
-    </div>
-    <div>
-        🌤️ 12°C
-    </div>
-</main>
-    <footer>
-      Coded by
-      <a href="https://github.com/bella82691-dotcom" target="_blank">Bella</a>
-      , is
-      <a href="https://github.com/bella82691-dotcom/Meteo" target="_blank"></a>
-        open-sourced on GitHub</a
-      >
-      and hosted
-      <a href="https://bella-meteo-app.netlify.app/" target="_blank">
-        on Netlify</a
-      >
-    </footer>
+      </header>
+      <main>
+        <div class="Weather-app-data">
+          <div>
+            <h1 class="Weather-app-city">Paris</h1>
+            <p class="Weather-app-details">
+              Tuesday 14:49, scattered clouds
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.12km/h</strong>
+            </p>
+          </div>
+          <div class="Weather-app-temperature-container">
+            <div class="Weather-app-icon">🌤️</div>
+            <div class="Weather-app-temperature">12</div>
+            <div class="Weather-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/bella82691-dotcom" target="_blank">Bella</a>
+        , is
+        <a href="https://github.com/bella82691-dotcom/Meteo" target="_blank"
+          >open-sourced on GitHub</a
+        >
+
+        and hosted
+        <a href="https://bella-meteo-app.netlify.app/" target="_blank">
+          on Netlify</a
+        >
+      </footer>
     </div>
   </body>
 </html>
